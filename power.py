@@ -36,11 +36,12 @@ def power(a, b):
 
 print(power(4, 2)) # => 16
 
+
 def power_r(a, b):
     # Error checking
     # try to cast our exponent to an int
     try:
-        val = int(b)
+        _ = int(b)
     # exception on fail with error message
     except ValueError:
         print("Exponent (b) must be and integer")
