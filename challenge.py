@@ -1,6 +1,7 @@
 
 # Challenge What is the runtime complexity of this function
 
+# O(n)
 def power_r(a,b):
     # Error cehcking
     # try to cast our exponent to an int
