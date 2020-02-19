@@ -5,10 +5,10 @@
 def power_r(a,b):
     # Error cehcking
     # try to cast our exponent to an int
-    try:
+    try: # O(1)
         _ = int(b) # O(1)
     # exception on fail with error message
-    except ValueError:
+    except ValueError: # O(1)
         print(f"Exponent (b) = ({b}) must be an integer") # O(1)
         return # O(1)
     # and return
