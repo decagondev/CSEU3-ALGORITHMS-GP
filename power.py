@@ -35,3 +35,34 @@ def power(a, b):
     return result
 
 print(power(4, 2)) # => 16
+
+def power_r(a, b):
+    # Error checking
+    # try to cast our exponent to an int
+    try:
+        val = int(b)
+    # exception on fail with error message
+    except ValueError:
+        print("Exponent (b) must be and integer")
+        # and return
+        return
+
+    # base case
+    # anything raised to the power of 0 will be one
+    if b == 0:
+        return 1
+    # positive case if b is greater than zero
+    elif b > 0:   
+        # Recursive case
+        # Call the function on b - 1
+        return a * power_r(a, b - 1)
+    # Recursive negative exponent
+    else:
+        # return 1 divided by a multiplied by the function with -b - 1
+        return 1 / (a * power_r(a, -b - 1))
+        # or return 1 divided by function with -b
+        # return 1 / power_r(a, -b)
+
+print(power_r(4, 2)) # => 16
+print(power_r(8, -1)) # => 0.125
+print(power_r(2, "supercalafragialisticexpialodocious")) # => Exponent (b) must be and integer
