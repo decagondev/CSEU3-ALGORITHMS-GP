@@ -15,3 +15,16 @@
 
 3. Implement
 """
+
+def anagrams(words):
+    # generate random values for each character a-z
+    # set a list of char values initialized to zero (26 list slots)
+    # iterate over the len of the char list
+        # set the chars at index to a random number
+
+    # create a new dictionary and a signature
+
+    # use random char values to calculate a value for each word
+
+    # get max entry in the dictionary
+    pass
