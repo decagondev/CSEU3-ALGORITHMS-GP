@@ -23,8 +23,25 @@ def anagrams(words):
         # set the chars at index to a random number
 
     # create a new dictionary and a signature
-
+    # create an empty dictionary
+    # create a integer signature and set it to zero
+    
     # use random char values to calculate a value for each word
+    # iterate over each word in the words list
+        # set each word to lower case
+
+        # iterate over each character in the word
+            # find the ordinal value of the char and decrement it by 97
+            # and set it to the label of index
+
+            # check if the index is greater than zero and less than 26
+                # set the signature to the caharacter at index
+            
+            # group words with the same value
+            # check if the signature is not in anagrams:
+                # append the word to the anagrams at signature
+                # reset the signature to zero
 
     # get max entry in the dictionary
+    # set max anagrams to the max of the anagram item at the zeroth index
     pass
